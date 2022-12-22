@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include "menuSelection/optionPlayMenu.h"
+
 using namespace std;
 
 void mainMenuSelect();
@@ -19,6 +21,7 @@ int main()
     if (userMainSelect == 1)    //run through options to see what the user selected from menu
     {
         cout << "You have decided to play the game." << '\n';
+        playMenu();
     } else if(userMainSelect == 2)
     {
         cout << "Here is the settings menu" << '\n';
@@ -30,6 +33,7 @@ int main()
         cout << "Invalid selection. Please try again." << '\n';
     }
 
+    return 0;
 }
 
                         //function definitions

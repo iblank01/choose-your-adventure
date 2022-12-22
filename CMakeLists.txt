@@ -7,4 +7,5 @@ include_directories(.)
 
 add_executable(choose_your_adventure
         main.cpp
-        README.md hedgehogGameStart/optionPlayMenu.cpp)
+        menuSelection/optionPlayMenu.cpp
+        menuSelection/optionPlayMenu.h)

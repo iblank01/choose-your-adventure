@@ -1,13 +1,11 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
-
 //going to be using this to display play menu
 
 void playMenuSelect();
 
-int main()
+void playMenu()
 {
     playMenuSelect();   //call function for user to select menu option
 
@@ -27,11 +25,9 @@ int main()
     {
         cout << "Invalid selection. Please try again." << '\n';
     }
-
-    return 0;
 }
 
-void playMenuSelect()  //allows users to select from play menu
+void playMenuSelect()
 {
     cout
     << "1.) New Game" << '\n'
