@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+//might include using namespace std; here
 
 void playMenuSelect();
 void playMenu();

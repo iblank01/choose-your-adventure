@@ -1,3 +1,4 @@
+#include "optionPlayMenu.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -14,13 +15,13 @@ void playMenu()
 
     if (userPlaySelect == 1)        //later to change to move to diffeerent files for game
     {
-        cout << "New game starting" << '\n';
+        cout << "New game starting\n" << '\n';
     } else if(userPlaySelect == 2)
     {
-        cout << "Continuing to existing game" << '\n';
+        cout << "Continuing to existing game\n" << '\n';
     } else if(userPlaySelect == 3)
     {
-        cout << "Going back to main menu" << '\n';
+        cout << "Going back to main menu\n" << '\n';
     } else
     {
         cout << "Invalid selection. Please try again." << '\n';

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "menuSelection/optionPlayMenu.h"
+#include "menuSelection/optionRaceMenu.h"
 
 using namespace std;
 
@@ -24,12 +25,29 @@ int main()
         playMenu();
     } else if(userMainSelect == 2)
     {
-        cout << "Here is the settings menu" << '\n';
+        cout << "Here is the settings menu\n" << '\n';
     } else if(userMainSelect == 3)
     {
-        cout << "Deciding to quit already? Okay" << '\n';
+        cout << "Deciding to quit already? Okay\n" << '\n';
     } else
     {
+        cout << "Invalid selection. Please try again.\n" << '\n';
+    }
+
+    cout << "Welcome to Choose Your Adventure!\n" << '\n';
+
+
+    int userRaceSelect{raceMenuSelect()};
+    if (userRaceSelect == 1)
+    {
+        cout << "You have selected" << '\n';
+    } else if (userRaceSelect == 2) {
+        cout << "You have selected" << '\n';
+    } else if (userRaceSelect == 3) {
+        cout << "You have selected" << '\n';
+    } else if (userRaceSelect == 4) {
+        cout << "You have selected" << '\n';
+    } else {
         cout << "Invalid selection. Please try again." << '\n';
     }
 
