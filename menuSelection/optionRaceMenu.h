@@ -6,4 +6,4 @@
 
 int raceMenuSelect();
 
-#endif // OPTION_RACEMENU_H
+#endif OPTION_RACEMENU_H
