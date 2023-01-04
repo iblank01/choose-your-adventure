@@ -1,9 +1,5 @@
 #include "optionPlayMenu.h"
-#include <iostream>
-#include <string>
-using namespace std;
 //going to be using this to display play menu
-
 void playMenuSelect();
 
 void playMenu()
@@ -16,6 +12,7 @@ void playMenu()
     if (userPlaySelect == 1)        //later to change to move to diffeerent files for game
     {
         cout << "New game starting\n" << '\n';
+        raceMenuSelect();
     } else if(userPlaySelect == 2)
     {
         cout << "Continuing to existing game\n" << '\n';

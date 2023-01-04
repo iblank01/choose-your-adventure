@@ -7,6 +7,6 @@ include_directories(.)
 
 add_executable(choose_your_adventure
         main.cpp
-        menuSelection/optionPlayMenu.cpp
-        menuSelection/optionPlayMenu.h
-        menuSelection/optionRaceMenu.cpp menuSelection/optionRaceMenu.h)
+        menuSelection/optionPlayMenu.cpp menuSelection/optionPlayMenu.h
+        menuSelection/optionRaceMenu.cpp menuSelection/optionRaceMenu.h
+        menuSelection/optionSettingsMenu.cpp menuSelection/optionSettingsMenu.h)

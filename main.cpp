@@ -25,6 +25,7 @@ int main()
     } else if(userMainSelect == 2)
     {
         cout << "Here is the settings menu\n" << '\n';
+
     } else if(userMainSelect == 3)
     {
         cout << "Deciding to quit already? Okay\n" << '\n';
@@ -35,11 +36,7 @@ int main()
 
     cout << "Welcome to Choose Your Adventure!\n" << '\n';
 
-    //these allow us to start to utilize user stat and race functionalities
-    raceMenuSelect();
-
-
-
+    //put race menu in new game
 
     return 0;
 }
