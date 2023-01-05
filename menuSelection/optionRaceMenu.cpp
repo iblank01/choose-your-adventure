@@ -9,13 +9,12 @@ int raceMenuSelect()
     int userRaceSelect{ };
 
     cout
-            << "Pick your race to begin your adventure!\n"
-            << '\n'
-            << "1.) Human" << '\n'
-            << "2.) Elf" << '\n'
-            << "3.) Dwarf" << '\n'
-            << "4.) Hedgehog" << '\n'
-            << "Selection: ";
+    << "Pick your race to begin your adventure!" << '\n'
+    << "1.) Human" << '\n'
+    << "2.) Elf" << '\n'
+    << "3.) Dwarf" << '\n'
+    << "4.) Hedgehog" << '\n'
+    << "Selection: ";
     cin >> userRaceSelect;
 
     //now calculating race stats

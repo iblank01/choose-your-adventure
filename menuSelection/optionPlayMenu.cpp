@@ -1,15 +1,15 @@
 #include "optionPlayMenu.h"
-//going to be using this to display play menu
-void playMenuSelect();
+
+void playMenuSelect();                                              //going to be using this to display play menu
 
 void playMenu()
 {
-    playMenuSelect();   //call function for user to select menu option
+    playMenuSelect();                                               //call function for user to select menu option
 
     int userPlaySelect{ };
     cin >> userPlaySelect;
 
-    if (userPlaySelect == 1)        //later to change to move to different files for game
+    if (userPlaySelect == 1)                                        //later to change to move to diff. files for game
     {
         cout << "New game starting\n" << '\n';
         raceMenuSelect();
