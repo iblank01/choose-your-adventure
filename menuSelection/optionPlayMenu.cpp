@@ -9,7 +9,7 @@ void playMenu()
     int userPlaySelect{ };
     cin >> userPlaySelect;
 
-    if (userPlaySelect == 1)        //later to change to move to diffeerent files for game
+    if (userPlaySelect == 1)        //later to change to move to different files for game
     {
         cout << "New game starting\n" << '\n';
         raceMenuSelect();
