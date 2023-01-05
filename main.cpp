@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include "menuSelection/optionPlayMenu.h"
-#include "menuSelection/optionSettingsMenu.h"
-
-using namespace std;
+#include "main.h"
 
 void mainMenuSelect();
 
