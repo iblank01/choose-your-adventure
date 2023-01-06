@@ -9,4 +9,5 @@ add_executable(choose_your_adventure
         main.cpp main.h
         menuSelection/optionPlayMenu.cpp menuSelection/optionPlayMenu.h
         menuSelection/optionRaceMenu.cpp menuSelection/optionRaceMenu.h
-        menuSelection/optionSettingsMenu.cpp menuSelection/optionSettingsMenu.h)
+        menuSelection/optionSettingsMenu.cpp menuSelection/optionSettingsMenu.h
+        gameStart/areaDarkForest.cpp gameStart/areaDarkForest.h)
