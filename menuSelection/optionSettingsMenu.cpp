@@ -1,4 +1,5 @@
 #include "optionSettingsMenu.h"
+using namespace std;
 
 void settingsSelect()
 {

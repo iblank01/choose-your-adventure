@@ -4,8 +4,6 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 void settingsSelect();
 
 #endif OPTION_SETTINGSMENU_H

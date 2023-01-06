@@ -1,5 +1,4 @@
 #include "optionRaceMenu.h"
-
 using namespace std;
 
 int raceMenuSelect()

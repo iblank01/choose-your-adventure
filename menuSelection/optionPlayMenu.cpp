@@ -1,4 +1,5 @@
 #include "optionPlayMenu.h"
+using namespace std;
 
 void playMenuSelect();                                              //going to be using this to display play menu
 
