@@ -6,7 +6,7 @@ void playMenuSelect();                                              //going to b
 void playMenu()
 {
     playMenuSelect();                                               //call function for user to select menu option
-
+    
     int userPlaySelect{ };
     cin >> userPlaySelect;
 

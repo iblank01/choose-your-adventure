@@ -1,6 +1,13 @@
 #include "optionRaceMenu.h"
 using namespace std;
 
+struct userDetails
+{
+    int userHealth = 0;
+    int userStrength = 0;
+    int userSpeed = 0;
+};
+
 int raceMenuSelect()
 {
     int userRaceSelect{ };
@@ -15,65 +22,67 @@ int raceMenuSelect()
     cin >> userRaceSelect;
 
     //now calculating race stats
-    int userHealth{};
-    int userStrength{};
-    int userSpeed{};
+    //creating instance of userDetails struct
+    userDetails user1;
 
-    if (userRaceSelect == 1)
+    if (userRaceSelect == 1)                                //reference struct vars to change based on userRaceSelect
     {
-        userHealth = 12;
-        userStrength = 5;
-        userSpeed = 4;
+        //human race stats
+        user1.userHealth = 12;
+        user1.userStrength = 5;
+        user1.userSpeed = 4;
 
         cout << "\nYou have selected: "
-            << "Human" << '\n';             //human race; 4 speed, 12 health, 5 strength
+             << "Human" << '\n';
 
-        cout << "Stats " << "\n"
-            << "Health: " << userHealth << '\n'
-            << "Strength: " << userStrength << '\n'
-            << "Speed: " << userSpeed << '\n';
+        cout << "Stats " << "\n"                            //each access members of the struct
+             << "Health: " << user1.userHealth << '\n'
+             << "Strength: " << user1.userStrength << '\n'
+             << "Speed: " << user1.userSpeed << '\n';
 
     } else if (userRaceSelect == 2) {
-        userHealth = 6;
-        userStrength = 4;
-        userSpeed = 4;
+        //elf race stats
+        user1.userHealth = 6;
+        user1.userStrength = 4;
+        user1.userSpeed = 4;
 
-        cout << "\nYou have selected: "
-            << "Elf" << '\n';               //elf race; 4 speed, 6 health, 4 strength
-
-        cout << "Stats " << "\n"
-            << "Health: " << userHealth << '\n'
-            << "Strength: " << userStrength << '\n'
-            << "Speed: " << userSpeed << '\n';
+        cout << "\nYou have selected: "                     //begin displaying selection
+             << "Elf" << '\n';
+        cout << "Stats " << "\n"                            //repeat of steps for human race
+             << "Health: " << user1.userHealth << '\n'
+             << "Strength: " << user1.userStrength << '\n'
+             << "Speed: " << user1.userSpeed << '\n';
 
     } else if (userRaceSelect == 3) {
-        userHealth = 15;
-        userStrength = 6;
-        userSpeed = 2;
+        //dwarf race stats
+        user1.userHealth = 15;
+        user1.userStrength = 6;
+        user1.userSpeed = 2;
 
-        cout << "\nYou have selected: "
-            << "Dwarf" << '\n';             //dwarf race; 2 speed, 15 health, 6 strength
-
+        cout << "\nYou have selected: "                     //repeat of steps for previous races
+            << "Dwarf" << '\n';
         cout << "Stats " << "\n"
-            << "Health: " << userHealth << '\n'
-            << "Strength: " << userStrength << '\n'
-            << "Speed: " << userSpeed << '\n';
+            << "Health: " << user1.userHealth << '\n'
+            << "Strength: " << user1.userStrength << '\n'
+            << "Speed: " << user1.userSpeed << '\n';
 
     } else if (userRaceSelect == 4) {
-        userHealth = 10;
-        userStrength = 3;
-        userSpeed = 6;
+        //hedgehog race stats
+        user1.userHealth = 10;
+        user1.userStrength = 3;
+        user1.userSpeed = 6;
 
-        cout << "\nYou have selected: "
-            << "Hedgehog" << '\n';          //hedgehog race; 6 speed, 10 health, 3 strength
-
+        cout << "\nYou have selected: "                     //repeat of steps for previous races
+             << "Hedgehog" << '\n';
         cout << "Stats " << "\n"
-            << "Health: " << userHealth << '\n'
-            << "Strength: " << userStrength << '\n'
-            << "Speed: " << userSpeed << '\n';
+             << "Health: " << user1.userHealth << '\n'
+             << "Strength: " << user1.userStrength << '\n'
+             << "Speed: " << user1.userSpeed << '\n';
 
-    } else {
+    } else
+    {
         cout << "Invalid selection. Please try again." << '\n';
     }
+
     return userRaceSelect;
 }
