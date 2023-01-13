@@ -15,7 +15,7 @@ int main()
     switch (userMainSelect)                                             //switch to filter user input
     {
         case 1:
-            cout << "You have decided to play the game." << '\n';       //displays play menu selection (confirmation)
+            cout << '\n' << "You have decided to play the game." << '\n';       //displays play menu selection (confirmation)
             playMenu();
             break;
         case 2:
