@@ -13,23 +13,23 @@ int main()
     int userMainSelect{ };                                          //initializes variable to store user select.
     cin >> userMainSelect;
 
-    if (userMainSelect == 1)                                        //run through options to see what the user selected
+    switch (userMainSelect)                                             //switch to filter user input
     {
-        cout << "You have decided to play the game." << '\n';       //displays play menu selection (confirmation)
-        playMenu();                                                 //calls playMenu function
-    } else if(userMainSelect == 2)
-    {
-        cout << "Here is the settings menu\n" << '\n';              //displays settings menu selection (confirmation)
-        settingsSelect();                                           //calls settingsSelect function
-    } else if(userMainSelect == 3)
-    {
-        cout << "Deciding to quit already? Okay\n" << '\n';         //displays quitting option selection (confirmation)
-    } else
-    {
-        cout << "Invalid selection. Please try again.\n" << '\n';   //displays if the user select is invalid
+        case 1:
+            cout << "You have decided to play the game." << '\n';       //displays play menu selection (confirmation)
+            playMenu();
+            break;
+        case 2:
+            cout << "Here is the settings menu\n" << '\n';              //displays settings menu selection (confirmation)
+            settingsSelect();
+            break;
+        case 3:
+            cout << "Deciding to quit already? Okay\n" << '\n';
+            break;
+        default:
+            cout << "Invalid selection. Please try again.\n" << '\n';
+            break;
     }
-
-    //put race menu in new game
 
     return 0;
 }
