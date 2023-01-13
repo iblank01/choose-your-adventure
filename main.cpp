@@ -8,9 +8,8 @@ int main()
     cout
     << "Welcome to Choose Your Adventure!" << '\n';
     
-    mainMenuSelect();                                               //provides user menu to select from
-
-    int userMainSelect{ };                                          //initializes variable to store user select.
+    mainMenuSelect();                                                   //provides user menu to select from
+    int userMainSelect{ };                                              //initializes variable to store user select.
     cin >> userMainSelect;
 
     switch (userMainSelect)                                             //switch to filter user input
@@ -30,7 +29,6 @@ int main()
             cout << "Invalid selection. Please try again.\n" << '\n';
             break;
     }
-
     return 0;
 }
 
