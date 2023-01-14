@@ -12,7 +12,7 @@ struct userDetails
     int userSpeed = 0;
 };
 
-int raceMenuSelect()
+void raceMenuSelect()
 {
     int userRaceSelect{ };
 
@@ -66,7 +66,5 @@ int raceMenuSelect()
          << "Strength: " << user1.userStrength << '\n'
          << "Speed: " << user1.userSpeed << '\n'
          << '\n';
-
-    return userRaceSelect;
 
 }

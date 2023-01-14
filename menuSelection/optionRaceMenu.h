@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-int raceMenuSelect();
+void raceMenuSelect();
 struct userDetails;
 
-#endif OPTION_RACEMENU_H
+#endif
