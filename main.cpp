@@ -29,6 +29,8 @@ int main()
             cout << "Invalid selection. Please try again.\n" << '\n';
             break;
     }
+
+    //send user to areaDarkForest.cpp
     return 0;
 }
 

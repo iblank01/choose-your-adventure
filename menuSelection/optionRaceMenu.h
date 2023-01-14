@@ -5,5 +5,6 @@
 #include <string>
 
 int raceMenuSelect();
+struct userDetails;
 
 #endif OPTION_RACEMENU_H
