@@ -6,23 +6,25 @@ void playMenuSelect();                                              //going to b
 void playMenu()
 {
     playMenuSelect();                                               //call function for user to select menu option
-    
     int userPlaySelect{ };
     cin >> userPlaySelect;
 
-    if (userPlaySelect == 1)                                        //later to change to move to diff. files for game
+    switch (userPlaySelect)
     {
-        cout << "New game starting\n" << '\n';
-        raceMenuSelect();
-    } else if(userPlaySelect == 2)
-    {
-        cout << "Continuing to existing game\n" << '\n';
-    } else if(userPlaySelect == 3)
-    {
-        cout << "Going back to main menu\n" << '\n';
-    } else
-    {
-        cout << "Invalid selection. Please try again." << '\n';
+        case 1:
+            cout << "New game starting\n" << '\n';
+            raceMenuSelect();
+            break;
+        case 2:
+            cout << "Continuing to existing game\n" << '\n';
+            //to eventually include save-file functionality
+            break;
+        case 3:
+            cout << "Going back to main menu\n" << '\n';
+            break;
+        case 4:
+            cout << "Invalid selection. Please try again." << '\n';
+            break;
     }
 }
 
