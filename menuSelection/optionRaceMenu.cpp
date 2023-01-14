@@ -64,7 +64,8 @@ int raceMenuSelect()
     cout << "Stats " << "\n"
          << "Health: " << user1.userHealth << '\n'
          << "Strength: " << user1.userStrength << '\n'
-         << "Speed: " << user1.userSpeed << '\n';
+         << "Speed: " << user1.userSpeed << '\n'
+         << '\n';
 
     return userRaceSelect;
 

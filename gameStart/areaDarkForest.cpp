@@ -1,8 +1,11 @@
 #include "areaDarkForest.h"
 using namespace std;
 
-int userDarkForest()
+void userDarkForest()
 {
+    cout << "============================================================================"
+         << '\n' << '\n';
 
-    return 0;
+    cout << "Loading. . . " << '\n';
+    cout << "You suddenly wake-up in your tent, your surroundings cold and dim. " << '\n';
 }

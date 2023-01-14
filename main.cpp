@@ -15,7 +15,7 @@ int main()
     switch (userMainSelect)                                             //switch to filter user input
     {
         case 1:
-            cout << '\n' << "You have decided to play the game." << '\n';       //displays play menu selection (confirmation)
+            cout << '\n' << "You decide to play the game." << '\n';     //displays play menu selection (confirmation)
             playMenu();
             break;
         case 2:
@@ -30,11 +30,12 @@ int main()
             break;
     }
 
-    //send user to areaDarkForest.cpp
+    userDarkForest();                                                   //send user to areaDarkForest.cpp
+
     return 0;
 }
 
-void mainMenuSelect()                                               //allows users to select from main menu
+void mainMenuSelect()                                                   //allows users to select from main menu
 {
 cout
 << "1.) Play" << '\n'
