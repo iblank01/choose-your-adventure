@@ -15,7 +15,8 @@ void userDarkForest()
          << '\n' << '\n';
 
     cout << "Loading. . . " << '\n';
-    cout << "You suddenly wake-up in your tent, your surroundings cold and dim. " << '\n';
+    cout << "You suddenly wake-up in your tent, your surroundings cold and dim. " << '\n'
+    << "You start to take in your surroundings when you notice a man standing above you " << '\n';
 
     //first traveller NPC in game
     travellers travellerNick;
