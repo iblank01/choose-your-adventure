@@ -18,6 +18,12 @@ void userDarkForest()
     //first traveller NPC in game
     travellers travellerNick;
     travellerNick.name = "Nick";
+    
+    cout << '\n'
+         << "Hello there! The name's Nick. Where are you headed?" << '\n';
+    cout << "1.) Trying to find the next town, a creature I met said go " << '\n'
+         << "2.) How do I know I can trust you? " << '\n'
+         << "3.) Not sure, really; just going wherever. " <<'\n';
 
-//    cout << "Hello " << userRaceFinal
+//    cout << "Hello " << user1.userRaceSelect;
 }

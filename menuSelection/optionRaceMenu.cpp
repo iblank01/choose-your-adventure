@@ -10,11 +10,13 @@ struct userDetails
     int userHealth = 0;
     int userStrength = 0;
     int userSpeed = 0;
+
+    int userRaceSelect = 0;     //keep track of user's race choice
 };
 
 void raceMenuSelect()
 {
-    int userRaceSelect{ };
+    userDetails user1;                                          //creating instance of userDetails struct
 
     cout
     << "Pick your race to begin your adventure!" << '\n'
@@ -23,12 +25,10 @@ void raceMenuSelect()
     << "3.) Dwarf" << '\n'
     << "4.) Hedgehog" << '\n'
     << "Selection: ";
-    cin >> userRaceSelect;
+    cin >> user1.userRaceSelect;
 
-    //creating instance of userDetails struct
-    userDetails user1;
     string userRaceFinal;                                       //for the purpose of storing the race more easily
-    switch(userRaceSelect)
+    switch(user1.userRaceSelect)
     {
         case 1:
             userRaceFinal = user1.race1;
