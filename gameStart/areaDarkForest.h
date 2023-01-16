@@ -2,9 +2,11 @@
 #define AREA_DARK_FOREST_H
 #include <iostream>
 #include <string>
-
 #include "../menuSelection/optionRaceMenu.h"    //included optionRaceMenu struct and functions.
 
+
 void userDarkForest();
+void calcImpression (int& travellerImpression, int impressionChange);
+struct travellers;
 
 #endif
