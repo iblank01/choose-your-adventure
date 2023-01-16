@@ -18,16 +18,20 @@ int main()
             cout << '\n' << "You decide to play the game." << '\n';     //displays play menu selection (confirmation)
             playMenu();
             break;
+
         case 2:
             cout << "Here is the settings menu\n" << '\n';              //displays settings menu selection (confirmation)
             settingsSelect();
             break;
+
         case 3:
             cout << "Deciding to quit already? Okay\n" << '\n';
             break;
+
         default:
             cout << "Invalid selection. Please try again.\n" << '\n';
             break;
+
     }
 
     userDarkForest();                                                   //send user to areaDarkForest.cpp
