@@ -36,24 +36,28 @@ void raceMenuSelect()
             user1.userStrength = 5;
             user1.userSpeed = 4;
             break;
+
         case 2:
             userRaceFinal = user1.race2;
             user1.userHealth = 6;
             user1.userStrength = 4;
             user1.userSpeed = 4;
             break;
+
         case 3:
             userRaceFinal = user1.race3;
             user1.userHealth = 15;
             user1.userStrength = 6;
             user1.userSpeed = 2;
             break;
+
         case 4:
             userRaceFinal = user1.race4;
             user1.userHealth = 10;
             user1.userStrength = 3;
             user1.userSpeed = 6;
             break;
+
         default:
             cout << "invalid selection. Please try again." << '\n';
             break;

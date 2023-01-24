@@ -11,6 +11,8 @@ void userDarkForest()
         int travImpression = 0;
     };
 
+
+
     cout << "============================================================================"
          << '\n' << '\n';
 
@@ -31,7 +33,6 @@ void userDarkForest()
 
     int tempChoiceStore{ };
     cin >> tempChoiceStore;
-
     int choiceImpact;                                    //store impact of user choice
 
     switch (tempChoiceStore)
@@ -48,12 +49,12 @@ void userDarkForest()
             break;
 
         case 2:
-            cout << "Quite the closed-off one are we? " << '\n'
+            cout << '\n' << "Quite the closed-off one are we? " << '\n'
             << "No bother, I'll be off. "
             << "*he vanishes*" << '\n';
 
             //impression adjustments below
-            cout << '\n' << "Nick will remember this" << '\n' << '\n';
+            cout << '\n' << "**Nick will remember this**" << '\n' << '\n';
             choiceImpact = 1;
             calcImpression(travellerNick.travImpression, choiceImpact);
             break;
@@ -70,6 +71,28 @@ void userDarkForest()
             cout << "Bad input. " << '\n';
             break;
     }
+    cout << '\n' << "And with this, you continue on your journey down the trail. " << '\n';
+
+    while(1)                                             //continue only if user enters 'y' or 'Y'
+    {
+        cout << '\n' << "Continue? " << '\n'
+             << "Selection (y/n): ";
+        char contPrompt;
+        cin >> contPrompt;
+
+        if(contPrompt == 'y' || contPrompt == 'Y')
+        {
+            break;
+        } else
+        {
+            cout << "That is okay. " << '\n';
+        }
+    }
+
+
+
+
+
 }
 
 void calcImpression (int& travellerImpression, int impressionChange)
@@ -79,9 +102,11 @@ void calcImpression (int& travellerImpression, int impressionChange)
         case -1:
             travellerImpression -= 1;
             break;
+
         case 1:
             travellerImpression += 1;
             break;
+
         default:                        //default will represent neutral choices
             break;
     }
