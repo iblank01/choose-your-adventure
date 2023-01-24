@@ -91,7 +91,40 @@ void userDarkForest()
 
 
 
+    cout << '\n' << "At some point you encounter a strange creature. " << '\n'
+    << "It is hunched over of wooden scraps, and appears to be hostile. " << '\n';
 
+
+        cout << '\n'
+             << "1.) Attack the creature " << '\n'
+             << "2.) Approach the creature " << '\n'
+             << "3.) Attempt to sneak past the creature" << '\n'
+             << "Selection: ";
+
+    cin >> tempChoiceStore;
+    switch(tempChoiceStore)
+    {
+      case 1:
+        cout << '\n' << "You attack the creature" << '\n';
+        //basicForestEnemy (calc if (userSpeed > || < eneSpeed), who attacks)
+        //then eneHealth - userAttack if successful
+        //vice-versa if the other way
+        break;
+
+      case 2:
+        cout << '\n' << "You approach the creature" << '\n';
+        //basicForestEnemy
+        break;
+
+      case 3:
+        cout << '\n' << "You attempt to sneak past the creature" << '\n';
+        //calc sneak success (if HEDGE, ELF, sneak success)
+        break;
+
+      default:
+        cout << '\n' << "Invalid Input. " << '\n';
+        break;
+    }
 
 }
 
